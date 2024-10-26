@@ -106,7 +106,7 @@ class qpet:
             'page': 1,
             'type': 2
         }
-        keys = [12, 11, 9, 7]
+        keys = [495647170, 507854858, 1178988705, 12, 11, 9, 7]
         for item in keys:
             params['B_UID'] = item
             url = self.base_url + urlencode(params)
@@ -990,7 +990,7 @@ class qpet:
         self.fight_mine()
         
         print('----------领取徒弟经验----------')
-        '''self.exp()
+        self.exp()
         print('----------每日奖励----------')
         self.daily_gift()
         print('----------大侠回归三重好礼----------')
@@ -1072,7 +1072,7 @@ class qpet:
         print('----------领取活跃礼包----------')
         self.get_active_reward()
         print('----------领取活动免费礼包----------')
-        self.get_special_event()'''
+        self.get_special_event()
 
 if __name__ == "__main__":
     try:

@@ -987,6 +987,8 @@ class qpet:
         from modules.take_stroll import take_stroll 
         take_stroll(self.base_url, self.get_content)
 
+        self.fight_mine()
+        
         print('----------领取徒弟经验----------')
         self.exp()
         print('----------每日奖励----------')

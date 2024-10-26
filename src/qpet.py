@@ -90,7 +90,7 @@ class qpet:
             'op': 'draw',
             'key': 'meridian'
         }
-        keys = ['meridian', 'login']
+        keys = ['meridian', 'login', 'daren', 'wuzitianshu']
         for item in keys:
             params['key'] = item
             url = self.base_url + urlencode(params)

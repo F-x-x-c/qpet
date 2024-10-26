@@ -97,6 +97,22 @@ class qpet:
             result = self.content_parser(url, self.pattern_1)
             print(result[1]) if len(result) > 1 else print(result)
 
+    def fight_mine(self):
+        params = {
+            'channel': 0,
+            'g_ut': 1,
+            'cmd': 'fight',
+            'B_UID': 12,
+            'page': 1,
+            'type': 2
+        }
+        keys = [12, 11, 9, 7]
+        for item in keys:
+            params['B_UID'] = item
+            url = self.base_url + urlencode(params)
+            result = self.content_parser(url, self.pattern_1)
+            print(result[1]) if len(result) > 1 else print(result)
+    
     # 大侠回归三重好礼
     def return_gift(self):
         params = {

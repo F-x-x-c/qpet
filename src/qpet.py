@@ -111,7 +111,6 @@ class qpet:
             params['B_UID'] = item
             url = self.base_url + urlencode(params)
             result = self.content_parser(url, self.pattern_1)
-            print(result[1]) if len(result) > 1 else print(result)
     
     # 大侠回归三重好礼
     def return_gift(self):

@@ -106,7 +106,7 @@ class qpet:
             'page': 1,
             'type': 2
         }
-        keys = [495647170, 507854858, 1178988705, 12, 11, 9, 7]
+        keys = [495647170, 507854858, 1178988705, 12, 11, 9, 7, 6, 14, 19]
         for item in keys:
             params['B_UID'] = item
             url = self.base_url + urlencode(params)

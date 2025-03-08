@@ -991,6 +991,8 @@ class qpet:
         
         print('----------领取徒弟经验----------')
         self.exp()
+        print('----------矿洞副本----------')
+        self.mine_cave()    
         print('----------每日奖励----------')
         self.daily_gift()
         print('----------大侠回归三重好礼----------')
@@ -1073,6 +1075,8 @@ class qpet:
         self.get_active_reward()
         print('----------领取活动免费礼包----------')
         self.get_special_event()
+        print('----------矿洞副本----------')
+        self.mine_cave()    
 
 if __name__ == "__main__":
     try:

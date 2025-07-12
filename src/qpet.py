@@ -143,21 +143,6 @@ class qpet:
         result = self.content_parser(url, self.pattern_1)
         result = self.content_parser(url, self.pattern_1)
 
-    def adventure_mine_dingchunqiu(self):
-        params = {
-            'channel': 0,
-            'g_ut': 1,
-            'cmd': 'mappush',
-            'subtype': 3,
-            'mapid': 3,
-            'npcid': 6054,
-            'pageid': 2
-        }
-        url = self.base_url + urlencode(params)
-        result = self.content_parser(url, self.pattern_1)
-        result = self.content_parser(url, self.pattern_1)
-        result = self.content_parser(url, self.pattern_1)
-
     def adventure_mine_qiuchuji(self):
         params = {
             'channel': 0,
@@ -1124,7 +1109,15 @@ class qpet:
         take_stroll(self.base_url, self.get_content)
 
         self.fight_mine()
-        self.adventure
+        self.adventure_mine_linghuchong()
+        self.adventure_mine_dingchunqiu()
+        self.adventure_mine_qiuchuji()
+        self.adventure_mine_xiaolongnv()
+        self.adventure_mine_saodiseng()
+        self.adventure_mine_hebiweng()
+        self.adventure_mine_weiyixiao()
+        self.adventure_mine_zhaomin()
+        
         
         print('----------领取徒弟经验----------')
         self.exp()

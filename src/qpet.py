@@ -111,6 +111,142 @@ class qpet:
             params['B_UID'] = item
             url = self.base_url + urlencode(params)
             result = self.content_parser(url, self.pattern_1)
+
+
+    def adventure_mine_linghuchong(self):
+        params = {
+            'channel': 0,
+            'g_ut': 1,
+            'cmd': 'mappush',
+            'subtype': 3,
+            'mapid': 6,
+            'npcid': 6114,
+            'pageid': 2
+        }
+        url = self.base_url + urlencode(params)
+        result = self.content_parser(url, self.pattern_1)
+        result = self.content_parser(url, self.pattern_1)
+        result = self.content_parser(url, self.pattern_1)
+
+    def adventure_mine_dingchunqiu(self):
+        params = {
+            'channel': 0,
+            'g_ut': 1,
+            'cmd': 'mappush',
+            'subtype': 3,
+            'mapid': 3,
+            'npcid': 6054,
+            'pageid': 2
+        }
+        url = self.base_url + urlencode(params)
+        result = self.content_parser(url, self.pattern_1)
+        result = self.content_parser(url, self.pattern_1)
+        result = self.content_parser(url, self.pattern_1)
+
+    def adventure_mine_dingchunqiu(self):
+        params = {
+            'channel': 0,
+            'g_ut': 1,
+            'cmd': 'mappush',
+            'subtype': 3,
+            'mapid': 3,
+            'npcid': 6054,
+            'pageid': 2
+        }
+        url = self.base_url + urlencode(params)
+        result = self.content_parser(url, self.pattern_1)
+        result = self.content_parser(url, self.pattern_1)
+        result = self.content_parser(url, self.pattern_1)
+
+    def adventure_mine_qiuchuji(self):
+        params = {
+            'channel': 0,
+            'g_ut': 1,
+            'cmd': 'mappush',
+            'subtype': 3,
+            'mapid': 4,
+            'npcid': 6074,
+            'pageid': 2
+        }
+        url = self.base_url + urlencode(params)
+        result = self.content_parser(url, self.pattern_1)
+        result = self.content_parser(url, self.pattern_1)
+        result = self.content_parser(url, self.pattern_1)
+
+    def adventure_mine_xiaolongnv(self):
+        params = {
+            'channel': 0,
+            'g_ut': 1,
+            'cmd': 'mappush',
+            'subtype': 3,
+            'mapid': 5,
+            'npcid': 6094,
+            'pageid': 2
+        }
+        url = self.base_url + urlencode(params)
+        result = self.content_parser(url, self.pattern_1)
+        result = self.content_parser(url, self.pattern_1)
+        result = self.content_parser(url, self.pattern_1)
+
+    def adventure_mine_saodiseng(self):
+        params = {
+            'channel': 0,
+            'g_ut': 1,
+            'cmd': 'mappush',
+            'subtype': 3,
+            'mapid': 7,
+            'npcid': 6134,
+            'pageid': 2
+        }
+        url = self.base_url + urlencode(params)
+        result = self.content_parser(url, self.pattern_1)
+        result = self.content_parser(url, self.pattern_1)
+        result = self.content_parser(url, self.pattern_1)
+
+    def adventure_mine_hebiweng(self):
+        params = {
+            'channel': 0,
+            'g_ut': 1,
+            'cmd': 'mappush',
+            'subtype': 3,
+            'mapid': 8,
+            'npcid': 6154,
+            'pageid': 2
+        }
+        url = self.base_url + urlencode(params)
+        result = self.content_parser(url, self.pattern_1)
+        result = self.content_parser(url, self.pattern_1)
+        result = self.content_parser(url, self.pattern_1)
+
+    def adventure_mine_weiyixiao(self):
+        params = {
+            'channel': 0,
+            'g_ut': 1,
+            'cmd': 'mappush',
+            'subtype': 3,
+            'mapid': 7,
+            'npcid': 6174,
+            'pageid': 2
+        }
+        url = self.base_url + urlencode(params)
+        result = self.content_parser(url, self.pattern_1)
+        result = self.content_parser(url, self.pattern_1)
+        result = self.content_parser(url, self.pattern_1)
+
+    def adventure_mine_zhaomin(self):
+        params = {
+            'channel': 0,
+            'g_ut': 1,
+            'cmd': 'mappush',
+            'subtype': 3,
+            'mapid': 10,
+            'npcid': 6194,
+            'pageid': 2
+        }
+        url = self.base_url + urlencode(params)
+        result = self.content_parser(url, self.pattern_1)
+        result = self.content_parser(url, self.pattern_1)
+        result = self.content_parser(url, self.pattern_1)
     
     # 大侠回归三重好礼
     def return_gift(self):
@@ -988,6 +1124,7 @@ class qpet:
         take_stroll(self.base_url, self.get_content)
 
         self.fight_mine()
+        self.adventure
         
         print('----------领取徒弟经验----------')
         self.exp()

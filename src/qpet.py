@@ -119,8 +119,8 @@ class qpet:
             'g_ut': 1,
             'cmd': 'mappush',
             'subtype': 3,
-            'mapid': 6,
-            'npcid': 6114,
+            'mapid': 2,
+            'npcid': 6034,
             'pageid': 2
         }
         url = self.base_url + urlencode(params)

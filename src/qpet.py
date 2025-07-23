@@ -232,6 +232,44 @@ class qpet:
         result = self.content_parser(url, self.pattern_1)
         result = self.content_parser(url, self.pattern_1)
         result = self.content_parser(url, self.pattern_1)
+
+
+    def qilingshujian_getreward(self):
+        params = {
+            'channel': 0,
+            'g_ut': 1,
+            'cmd': 'worldtree',
+            'op': 'getreward'
+        }
+        url = self.base_url + urlencode(params)
+        result = self.content_parser(url, self.pattern_1)
+
+    def qilingshujian_getexperience(self):
+        params = {
+            'channel': 0,
+            'g_ut': 1,
+            'cmd': 'worldtree',
+            'op': 'experience',
+            'task': 1
+        }
+        url = self.base_url + urlencode(params)
+        result = self.content_parser(url, self.pattern_1)
+
+    def menpaiyaoqingsai_jiangli(self):
+        params = {
+            'channel': 0,
+            'g_ut': 1,
+            'cmd': 'exchange',
+            'subtype': 2,
+            'type': 1246,
+            'times': 10,
+            'costtype': 11,
+        }
+        url = self.base_url + urlencode(params)
+        result = self.content_parser(url, self.pattern_1)
+        params['type'] = 1247
+        url = self.base_url + urlencode(params)
+        result = self.content_parser(url, self.pattern_1)
     
     # 大侠回归三重好礼
     def return_gift(self):
@@ -1206,7 +1244,13 @@ class qpet:
         print('----------领取活动免费礼包----------')
         self.get_special_event()
         print('----------矿洞副本----------')
-        self.mine_cave()    
+        self.mine_cave()
+        print('----------世界树----------')
+        self.qilingshujian_getreward()
+        self.qilingshujian_getexperience()
+        print('----------门派邀请赛商店兑换炼气石和门派强化书----------')
+        self.menpaiyaoqingsai_jiangli()
+
 
 if __name__ == "__main__":
     try:

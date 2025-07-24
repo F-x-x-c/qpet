@@ -267,8 +267,10 @@ class qpet:
         }
         url = self.base_url + urlencode(params)
         result = self.content_parser(url, self.pattern_1)
+        result = self.content_parser(url, self.pattern_1)
         params['type'] = 1247
         url = self.base_url + urlencode(params)
+        result = self.content_parser(url, self.pattern_1)
         result = self.content_parser(url, self.pattern_1)
     
     # 大侠回归三重好礼

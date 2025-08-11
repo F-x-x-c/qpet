@@ -272,6 +272,36 @@ class qpet:
         url = self.base_url + urlencode(params)
         result = self.content_parser(url, self.pattern_1)
         result = self.content_parser(url, self.pattern_1)
+
+    # 增加阅历高的几个boss
+    def adventure_mine_ewang(self):
+        params = {
+            'channel': 0,
+            'g_ut': 1,
+            'cmd': 'mappush',
+            'subtype': 3,
+            'mapid': 20,
+            'npcid': 6394,
+            'pageid': 2
+        }
+        url = self.base_url + urlencode(params)
+        result = self.content_parser(url, self.pattern_1)
+        result = self.content_parser(url, self.pattern_1)
+        result = self.content_parser(url, self.pattern_1)
+
+    def adventure_mine_ewang3(self):
+        params = {
+            'channel': 0,
+            'g_ut': 1,
+            'cmd': 'mappush',
+            'subtype': 3,
+            'mapid': 20,
+            'npcid': 6393,
+            'pageid': 2
+        }
+        url = self.base_url + urlencode(params)
+        result = self.content_parser(url, self.pattern_1)
+        result = self.content_parser(url, self.pattern_1)
     
     # 大侠回归三重好礼
     def return_gift(self):
@@ -1154,9 +1184,15 @@ class qpet:
         #self.adventure_mine_qiuchuji()
         #self.adventure_mine_xiaolongnv()
         #self.adventure_mine_saodiseng()
-        self.adventure_mine_hebiweng()
-        self.adventure_mine_weiyixiao()
-        self.adventure_mine_zhaomin()
+
+        # 阅历最高
+        self.adventure_mine_ewang()
+        self.adventure_mine_ewang()
+
+        # 雕心鹰爪
+        #self.adventure_mine_hebiweng()
+        #self.adventure_mine_weiyixiao()
+        #self.adventure_mine_zhaomin()
         
         
         print('----------领取徒弟经验----------')

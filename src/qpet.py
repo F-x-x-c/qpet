@@ -1187,7 +1187,7 @@ class qpet:
 
         # 阅历最高
         self.adventure_mine_ewang()
-        self.adventure_mine_ewang()
+        self.adventure_mine_ewang3()
 
         # 雕心鹰爪
         #self.adventure_mine_hebiweng()
